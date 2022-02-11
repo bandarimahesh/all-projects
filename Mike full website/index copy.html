@@ -1,0 +1,167 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <!-- box icons -->
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-box">
+          <h1>Mahesh</h1>
+        </div>
+
+        <ul class="menu" id="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a class="login" href="/register.html">Sign Up</a></li>
+        </ul>
+        <box-icon
+          class="bx-md"
+          name="menu-alt-right"
+          onclick="myFunction()"
+        ></box-icon>
+      </nav>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="about-section">
+          <div class="flex">
+            <div class="flex-item">
+              <h1>About</h1>
+              <span class="rectangle"></span>
+            </div>
+            <div class="flex-item">
+              <img src="images/about-img.jpg" alt="about image" />
+            </div>
+            <div class="flex-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quaerat quisquam exercitationem maiores voluptatum,
+              dolore consequatur temporibus explicabo tenetur ipsa?
+            </div>
+          </div>
+        </div>
+        <!-- svg start -->
+        <div class="header">
+          <div class="inner-header"></div>
+          <!--Waves Container-->
+          <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(255,255,255,0.7"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(255,255,255,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(255,255,255,0.3)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+          <!--Waves end-->
+        </div>
+        <!-- svg ends -->
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="header">
+          <div class="inner-header"></div>
+          <!--Waves Container-->
+          <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(255,255,255,0.7"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(255,255,255,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(255,255,255,0.3)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+          <!--Waves end-->
+        </div>
+      </section>
+      <div class="flex">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- link to js file -->
+    <script src="tingle.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+body{
+  color: #40514e;
+}
+hr{
+  border:dotted 6px;
+  border-bottom: none;
+  width: 5%;
+  margin:100px auto;
+}

@@ -1,0 +1,215 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      height: 77px;
+      padding: 10px 100px;
+      align-items: center;
+      background-color: #be3144;
+      position: fixed;
+      width: 90%;
+      font-family: Popins;
+    }
+    .logo {
+      font-size: 35px;
+      color: rgb(31, 28, 28);
+    }
+    #navbar li {
+      display: inline-block;
+    }
+    #navbar li a {
+      color: #fff;
+      font-size: 23px;
+      text-decoration: none;
+      margin-right: 60px;
+    }
+    #welcome-section {
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #111;
+    }
+    #welcome-section h1 {
+      margin: 0;
+      font-size: 77px;
+      color: #fff;
+    }
+    #welcome-section p {
+      color: #be3144;
+      font-size: 21px;
+    }
+    #projects {
+      width: 100%;
+      margin: auto;
+      height: auto;
+      background-color: #45567d;
+    }
+    #projects h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #fff;
+      margin: 0;
+      padding: 45px;
+    }
+    .projects-items {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 50px;
+      margin: 0 30px;
+    }
+    .project-tile {
+      width: 400px;
+      height: 600px;
+      text-align: center;
+      margin: auto;
+    }
+    .project-tile img {
+      width: 100%;
+    }
+    .project-tile p {
+      color: #fff;
+      font-size: 23px;
+      font-weight: 400;
+    }
+    #contact-section {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #contact-section h1 {
+      font-size: 70px;
+      margin: 0;
+    }
+    #contact-section p {
+      font-size: 20px;
+    }
+    .contact-links a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+    .contact-links a:hover {
+      color: #0000ff;
+    }
+    .contact-links a i {
+      padding: 0 2px;
+    }
+    footer {
+      text-align: center;
+    }
+    @media screen and (max-width: 778px) {
+      #navbar {
+        padding: 10px 800px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1 class="logo">Mahesh</h1>
+        <ul>
+          <li><a href="#welcome-section">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h1>Hey, I am Mike!</h1>
+        <p>a Web and Android developer</p>
+      </section>
+      <section id="projects">
+        <div>
+          <h1>These are some of my Projects</h1>
+        </div>
+        <div class="projects-items">
+          <div class="project-tile">
+            <a
+              href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+              target="_blank"
+              ><img
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                alt=""
+            /></a>
+            <p>Tribute Page</p>
+          </div>
+          <div class="project-tile">
+            <a
+              href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+              target="_blank"
+              ><img
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                alt=""
+            /></a>
+            <p>Random quote generator</p>
+          </div>
+          <div class="project-tile">
+            <a
+              href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+              target="_blank"
+              ><img
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                alt=""
+            /></a>
+            <p>JavaScript calculator</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact-section">
+        <div>
+          <h1>Let's work together!</h1>
+          <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.facebook.com"
+            ><i class="fa fa fa-facebook"></i>Facebook</a
+          >
+          <a
+            id="profile-link"
+            target="_blank"
+            href="https://github.com/freecodecamp"
+            ><i class="fa fa fa-github"></i>GitHub</a
+          >
+          <a href="https://www.twitter.com/"
+            ><i class="fa fa fa-twitter"></i>Twitter</a
+          >
+          <a href="#"><i class="fa fa fa-mobile"></i>Call me</a>
+        </div>
+      </section>
+      <footer>
+        <p>Copyright &copy; All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>

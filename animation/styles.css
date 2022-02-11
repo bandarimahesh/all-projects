@@ -1,0 +1,22 @@
+body {
+  background-color: red;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+ img:hover {
+     animation: rocket 5s;
+ }
+@keyframes rocket {
+0% {
+  transform: translate(-50%, 0);
+}
+100% {
+  transform: translate(-50%, -100vh);
+}
+}
